@@ -31,6 +31,27 @@ app.listen(PORT, function () {
 // var orm = require("./config/orm.js");
 
 // orm.all((res)=>{console.log("all:", res)})
-// orm.setEaten('chili cheeseburger', (res) =>{
-//   orm.all((res)=>{console.log("all:", res)})
+
+// orm.update('riz9ngz3ewy2wcp3.burgers','eaten', true, 'name', 'waffle iron', (res) =>{
+//   orm.all((res)=>{
+//     console.log("all:", res)
+//   })
 // })
+
+// var burger = require("./models/burgerModel.js")
+// burger.all((res) =>{
+//   console.table( res);
+// })
+
+// burger.eat('waffle iron', (res)=>{
+//   burger.all((res) =>{
+//     console.table(res);
+//   })
+  
+// });
+
+// burger.add('angus burger', (res)=>{
+//     burger.all((res) =>{
+//       console.table(res);
+//     })
+//   })
