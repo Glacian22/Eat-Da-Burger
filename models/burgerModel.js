@@ -8,8 +8,8 @@ var burger = {
     })
   },
 
-  eat: (name, cb) => {
-    orm.update('riz9ngz3ewy2wcp3.burgers', 'eaten', true, 'name', name, (res) => {
+  eat: (id, cb) => {
+    orm.update('riz9ngz3ewy2wcp3.burgers', 'eaten', true, 'id', id, (res) => {
       cb(res);
     })
   },

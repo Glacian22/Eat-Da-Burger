@@ -1,0 +1,33 @@
+<br>
+<div class="list" id="uneated">
+  Burgers awaiting their doom:
+  <br>
+  <ul>
+    {{#each burgers}}
+    {{#unless eaten}}
+    <span>
+      {{> uneaten-block}}
+      <button class="devour" id={{id}}>DEVOUR</button>
+    </span>
+    {{/unless}}
+    {{/each}}
+  </ul>
+</div>
+<br>
+<div class="list" id="eaten">
+  Burgers in burger-heaven
+  {{#each burgers}}
+  {{#if eaten}}
+  {{> uneaten-block}}
+  {{/if}}
+  {{/each}}
+</div>
+<div id="create">
+ <h2>Add a burger!</h2>
+  <form>
+    Burger name:<br>
+    <input id="burger-name" type="text" name="name">
+    <br><br>
+    <input type="submit" id="form-button">
+  </form>
+</div>
